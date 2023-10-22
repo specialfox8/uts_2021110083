@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:uts_2021110083/cartscreen/keranjang.dart';
 import 'package:uts_2021110083/productscreen/product.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -91,128 +92,408 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk1.png'),
-                        Text('Produk 1'),
-                        Text('Rp 100.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
                 InkWell(
                   onTap: () {
-                    // aksi yang dilakukan saat produk diklik
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
                   },
                   child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Image.asset('assets/images/produk2.png'),
-                        Text('Produk 2'),
-                        Text('Rp 200.000'),
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
-                // tambahkan card produk lainnya di sini
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RinciProduct()),
+                    );
+                  },
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          'assets/images/1.jpg',
+                          height: 400,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsets.only(left: 20, top: 15, right: 20),
+                          child: Text(
+                            "Product A",
+                            style: GoogleFonts.robotoCondensed(
+                              textStyle: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -224,14 +505,19 @@ class HomeScreen extends StatelessWidget {
             bottom: 16,
             right: 16,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => KeranjangBelanja()),
+                );
+              },
               child: Container(
                 width: 56,
                 height: 56,
                 decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.grey,
-                ),
+                    shape: BoxShape.circle,
+                    color: Colors.grey,
+                    border: Border.all(color: Colors.black, width: 2)),
                 child: Icon(
                   Icons.shopping_cart,
                   color: Colors.white,
