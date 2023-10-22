@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts_2021110083/homescreen/homescreen.dart';
 import 'package:uts_2021110083/login/login.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
-      routes: {"/": (context) => LgnScreen()},
+      routes: {"/": (context) => HomeScreen()},
+      // routes: {"/": (context) => LgnScreen()},
     );
   }
 }

@@ -12,7 +12,7 @@ class LgnScreen extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: MediaQuery.of(context).size.height / 4,
+            height: MediaQuery.of(context).size.height / 5,
             child: Image.asset(
               'assets/images/1.jpg',
               fit: BoxFit.cover,
@@ -32,31 +32,62 @@ class LgnScreen extends StatelessWidget {
                           fontStyle: FontStyle.normal),
                     ),
                   ),
-                  // Image.asset('assets/images/1.jpg'),
-                  SizedBox(height: 32),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      hintText: 'Username',
-                      border: OutlineInputBorder(),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 50, left: 35, right: 35),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: 'email',
+                        hintText: 'your email',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
                     ),
                   ),
-                  SizedBox(height: 16),
-                  TextFormField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      hintText: 'Password',
-                      border: OutlineInputBorder(),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 20, left: 35, right: 35),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: 'password',
+                        hintText: 'your password',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
                     ),
                   ),
-                  SizedBox(height: 32),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
+                  Padding(
+                    padding: EdgeInsets.only(top: 20, left: 35, right: 35),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => HomeScreen()));
-                    },
-                    child: Text('Login'),
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 90, 2, 253),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "login",
+                            style: GoogleFonts.robotoCondensed(
+                              color: Colors.white,
+                              textStyle: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w700,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
