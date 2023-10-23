@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
-      routes: {"/": (context) => HomeScreen()},
-      // routes: {"/": (context) => LgnScreen()},
+      // routes: {"/": (context) => HomeScreen()},
+      routes: {"/": (context) => LgnScreen()},
     );
   }
 }
