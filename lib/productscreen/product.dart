@@ -17,7 +17,7 @@ class RinciProduct extends StatelessWidget {
           Image.asset(
             'assets/images/1.jpg',
             width: double.infinity,
-            height: 300,
+            height: 200, // Kurangi tinggi gambar
             fit: BoxFit.cover,
           ),
           Padding(
@@ -26,9 +26,10 @@ class RinciProduct extends StatelessWidget {
               "Product A",
               style: GoogleFonts.robotoCondensed(
                 textStyle: const TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w700,
-                    fontStyle: FontStyle.normal),
+                  fontSize: 35,
+                  fontWeight: FontWeight.w700,
+                  fontStyle: FontStyle.normal,
+                ),
               ),
             ),
           ),
@@ -38,34 +39,39 @@ class RinciProduct extends StatelessWidget {
               "Rp 9.999.999",
               style: GoogleFonts.robotoCondensed(
                 textStyle: const TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.w400,
-                    fontStyle: FontStyle.normal),
+                  fontSize: 25,
+                  fontWeight: FontWeight.w400,
+                  fontStyle: FontStyle.normal,
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.only(left: 20, top: 30, right: 20),
+                child: Text(
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?",
+                  style: GoogleFonts.robotoCondensed(
+                    textStyle: const TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w100,
+                      fontStyle: FontStyle.normal,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
-            child: Text(
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam amet accusamus animi! Ad, error? Reprehenderit aperiam cupiditate id, voluptas ipsa autem tempore dolor sunt odio! Dolores corporis ipsa quas?",
-              style: GoogleFonts.robotoCondensed(
-                textStyle: const TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w100,
-                    fontStyle: FontStyle.normal),
-              ),
+            padding: EdgeInsets.all(5),
+            child: Column(
+              children: [
+                ProductPopUp(),
+              ],
             ),
           ),
-          // Padding(
-          //   padding: EdgeInsets.only(top: 150),
-          //   child: Column(
-          //     children: [],
-          //   ),
-          // ),
         ],
-      ),
-      floatingActionButton: Stack(
-        children: [ProductPopUp()],
       ),
     );
   }

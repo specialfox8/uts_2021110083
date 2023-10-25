@@ -73,7 +73,7 @@ class KeranjangBelanja extends StatelessWidget {
                                       width: 60,
                                     ),
                                   ),
-                                  const Padding(
+                                  Padding(
                                     padding: EdgeInsets.only(left: 5),
                                     child: Column(
                                       children: [
@@ -83,19 +83,25 @@ class KeranjangBelanja extends StatelessWidget {
                                           children: [
                                             Text(
                                               "Product a",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w400,
-                                                fontSize: 10,
+                                              style:
+                                                  GoogleFonts.robotoCondensed(
+                                                textStyle: TextStyle(
+                                                  fontSize: 10,
+                                                  fontWeight: FontWeight.w700,
+                                                  fontStyle: FontStyle.normal,
+                                                ),
                                               ),
                                             ),
                                             SizedBox(height: 10),
                                             Text(
                                               "Rp 9.999.999 x 9",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w400,
-                                                fontSize: 10,
+                                              style:
+                                                  GoogleFonts.robotoCondensed(
+                                                textStyle: TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.w400,
+                                                  fontSize: 10,
+                                                ),
                                               ),
                                             ),
                                           ],

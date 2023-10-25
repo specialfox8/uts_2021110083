@@ -15,7 +15,7 @@ class ProductPopUp extends StatelessWidget {
       children: [
         const SizedBox(width: 16.0),
         Padding(
-          padding: const EdgeInsets.only(left: 10),
+          padding: const EdgeInsets.only(left: 3),
           child: Container(
             width: 80,
             padding: const EdgeInsets.all(5),

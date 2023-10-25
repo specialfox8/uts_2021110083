@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 20, top: 30),
+            padding: EdgeInsets.only(left: 20, top: 20),
             child: Text(
               "Our products",
               style: GoogleFonts.robotoCondensed(
@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 30),
           Expanded(
             child: GridView.count(
               crossAxisCount: 2,
@@ -110,21 +110,30 @@ class HomeScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(
-                            'assets/images/1.jpg',
-                            height: 140,
-                            width: double.infinity,
-                            fit: BoxFit.cover,
+                          Card(
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/1.jpg',
+                                    width: double.infinity,
+                                    height: 150,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(left: 20, right: 20),
+                            padding: EdgeInsets.all(5),
                             child: Text(
                               "Product A",
                               style: GoogleFonts.robotoCondensed(
                                 textStyle: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400,
-                                    fontStyle: FontStyle.normal),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal,
+                                ),
                               ),
                             ),
                           ),
